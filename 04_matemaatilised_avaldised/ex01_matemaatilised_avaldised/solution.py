@@ -1,6 +1,8 @@
 """Math exercises."""
+"""Math exercises."""
 
 import math
+
 
 def sum_and_difference(num_a: int, num_b: int) -> tuple:
     """Return the sum and difference of given variables num_a and num_b."""
@@ -37,8 +39,8 @@ def find_average(num_a: int, num_b: int) -> float:
 
 def area_of_a_circle(radius: float) -> float:
     """Calculate and return the area of a circle."""
-    circle_area = 3.14 * radius ** 2
-    return circle_area
+    circle_area = math.pi * radius ** 2
+    return round(circle_area)
 
 
 def area_of_an_equilateral_triangle(side_length: float) -> float:
@@ -56,17 +58,17 @@ def calculate_discriminant(a: int, b: int, c: int) -> int:
 def calculate_hypotenuse_length(a: int, b: int) -> float:
     """Return the length of hypotenuse when the lengths of the catheti are given."""
     hypotenuse = math.sqrt(a ** 2 + b ** 2)
-    return round(hypotenuse)
+    return hypotenuse
 
 
 def calculate_cathetus_length(a: int, c: int) -> float:
     """Return the length of cathetus when the lengths of the second cathetus and hypotenuse are given."""
     cathetus = math.sqrt(c ** 2 - a ** 2)
-    return round(cathetus)
+    return cathetus
 
 if __name__ == '__main__':
-    addition_result, difference = sum_and_difference(5, 6)
-    assert addition_result == 11
+    sum_value, difference = sum_and_difference(5, 6)
+    assert sum_value == 11
     assert difference == -1
 
     float_division_result = float_division(10, 10)
@@ -90,7 +92,7 @@ if __name__ == '__main__':
     assert average_result == 7.5
 
     circle_area_result = area_of_a_circle(10)
-    assert circle_area_result == 314
+    assert circle_area_result == 314.1592653589793
 
     triangle_area_result = area_of_an_equilateral_triangle(8)
     assert triangle_area_result == 28
@@ -99,7 +101,7 @@ if __name__ == '__main__':
     assert discriminant_result == 16
 
     hypotenuse_result = calculate_hypotenuse_length(10, 8)
-    assert hypotenuse_result == 13
+    assert hypotenuse_result == 12.8062
 
     cathetus_result = calculate_cathetus_length(10, 16)
-    assert cathetus_result == 12
+    assert cathetus_result == 12.4899
