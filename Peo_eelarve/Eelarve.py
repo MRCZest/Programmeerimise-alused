@@ -41,7 +41,6 @@ def eelarve(kylalised: int) -> int:
     ruumikulu = 55
     return soogikulu + ruumikulu
 
-
 kutsutud = int(input("Mitu inimest on peole kutsutud? "))
 tulevad = int(input("Mitu inimest tuleb? "))
 
