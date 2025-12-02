@@ -41,12 +41,11 @@ def eelarve(kylalised: int) -> int:
     ruumikulu = 55
     return soogikulu + ruumikulu
 
-kutsutud = int(input("Mitu inimest on peole kutsutud? "))
-tulevad = int(input("Mitu inimest tuleb? "))
-
-maksimaalne = eelarve(kutsutud)
-minimaalne = eelarve(tulevad)
-
-print(f"Maksimaalne eelarve on {maksimaalne} eurot")
-print(f"Minimaalne eelarve on {minimaalne} eurot")
+if __name__ == '__main__':
+    kutsutud = int(input("Mitu inimest on peole kutsutud? "))
+    tulevad = int(input("Mitu inimest tuleb? "))
+    maksimaalne = eelarve(kutsutud)
+    minimaalne = eelarve(tulevad)
+    print(f"Maksimaalne eelarve on {maksimaalne} eurot")
+    print(f"Minimaalne eelarve on {minimaalne} eurot")
 
