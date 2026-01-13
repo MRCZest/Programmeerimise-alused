@@ -5,7 +5,7 @@
     4.Juhul kui sisestatud number on suuremkui 10, tagastatakse „Viga“.
 """
 
-def kordus(sona, arv):
+def kordus(sona: str, arv: int):
         if arv > 10:
             return "Viga"
         else:
